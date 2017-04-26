@@ -10,7 +10,7 @@ var add = function(a,b){
 };
 </pre>
 <br>
-If you were to write the function into the <code>myFunctions.js</code> tab, you could then use it in the <code>myScript.js</code> tab. Write the function into the appropirate tab and then see what happens, when you use it in the othter tab. Try out a couple of these and see what happens.
+If you write the function into the myFunctions.js tab, you could then use it in the myScript.js tab. Write the function into the appropirate tab and then try out a couple of these and see what happens.
 <br>
 <br>
 <pre>
