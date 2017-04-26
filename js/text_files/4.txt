@@ -1,11 +1,19 @@
 <h1>Lesson 3: Functions</h1>
 <br>
 <br>
-A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, you must define it somewhere in the scope from which you wish to call it.This is how you define a function.
+A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, you must define it somewhere in the scope from which you wish to call it.These are a couple of ways you define a function:
 <br>
 <br>
 <pre>
 var add = function(a,b){
 	return a + b;
 };
+
+add: function(a,b){
+	return a+ b;
+};
 </pre>
+<br>
+If you were to write the function into the <code>myFunctions.js</code> tab, you could then use it in the <code>myScript.js</code> tab. Write the function into the appropirate tab and then see what happens, when you use it in the othter tab. Try out a couple of these and see what happens.
+<br>
+
