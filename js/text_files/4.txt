@@ -10,11 +10,11 @@ var add = function(a,b){
 };
 </pre>
 <br>
-If you write the function into the myFunctions.js tab, you could then use it in the myScript.js tab. Write the function into the appropirate tab and then try out a couple of these and see what happens.
+If you write the function into the myFunctions.js tab, you could then use it in the myScript.js tab. Write the function into the appropirate tab and then try out a couple of these in myScript.js and see what happens.
 <br>
 <br>
 <pre>
-rameses.alert("I am " + add(10,10) + " years old");
+rameses.alert("I am "+add(10,10)+" years old");
 rameses.moveUp(add(2,3));
 rameses.moveRight(add(1,1));
 </pre>
