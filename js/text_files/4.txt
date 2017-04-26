@@ -1,4 +1,4 @@
-<hr>Lesson 3: Functions</hr>
+<hr1>Lesson 3: Functions</hr1>
 <br><br>
 A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, you must define it somewhere in the scope from which you wish to call it.This is how you define a function.
 <pr>
