@@ -1,6 +1,12 @@
 var movementDelays = [];
 var alertDelays = [];
 
+var dalert = function(a){
+    alertDelays.push(setTimeout function(){
+        rameses.alert(a);
+    }, 500);
+}
+
 var rameses = {
     name: "Rameses",
     thought: "What a GDTBATH...",
@@ -90,11 +96,8 @@ var rameses = {
         },delay + 200));
     },
     alert: function(speak) {
-        
-            alertDealys.push(setTimeout( function() {
-                $("#bubble").text(speak);
-            }, 1000);
-                    
+   
+            $("#bubble").text(speak);       
             $("#speech_wrap").fadeIn();
             setTimeout(function() {
             $("#speech_wrap").fadeOut();
