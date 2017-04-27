@@ -96,11 +96,6 @@ var rameses = {
             setTimeout(function() {
             $("#speech_wrap").fadeOut();
                 }, 3000);
-    },
-    dalert: function(a){
-        alertDelays.push(setTimeout function(){
-            rameses.alert(a);
-        }, 500);
     }
 }
 }
