@@ -91,7 +91,10 @@ var rameses = {
     },
     alert: function(speak) {
         
-            $("#bubble").text(speak);
+            alertDealys.push(setTimeout( function() {
+                $("#bubble").text(speak);
+            }, 1000);
+                    
             $("#speech_wrap").fadeIn();
             setTimeout(function() {
             $("#speech_wrap").fadeOut();
