@@ -1,11 +1,9 @@
 <h1>Lesson Two: Data Types Part 1</h1>
 <br>
-There are serveral different data types that can be used in programming. They can be split into two different categories: Primitive and Non-Primitive (or Reference).
-<br><br>
 There are five different types of primitive data types in JavaScript. They are numbers, strings, booleans, null, and undefined. These are all just values you can assign to any variable.
-<br>
+<br><br>
 To create a variable do the following:
-<br>
+<br><br>
 <pre>
 var myVariable = 40;
 </pre>
