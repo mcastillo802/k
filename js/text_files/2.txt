@@ -18,7 +18,9 @@ var aString = "Okay ";
 var aVariable = aString + aNumber;
 </pre>
 <br>
+<br>
 Use <code>alert()</code> to display <code>aVariable</code> and see what happens. If you do not remember how to use <code>alert()</code> feel free to look back at lesson one.
+<br>
 <br>
 As you have probably seen by now the result is probabaly not what you expected. This is a result of concatination or when the program combines two strings. This will happen anytime you use "+" to combine a string and a number/string.
 <br>
