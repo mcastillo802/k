@@ -1,4 +1,4 @@
-<h1>Lesson 6: Functions and Parameters</h1>
+<h1>Lesson Five: Functions and Parameters</h1>
 <br>
 <br>
 As seen in ther previous lesson, functions can be put into methods as arguments. The reason for this is very simple, return values. Return values allow the function to be assigned a value which can then be used as an argument in a method.
