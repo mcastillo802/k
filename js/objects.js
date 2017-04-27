@@ -94,12 +94,12 @@ var rameses = {
         $("#speech_wrap").fadeIn();
         setTimeout(function() {
             $("#speech_wrap").fadeOut();
-        }, 1000);
+        }, 600);
     },
     alert: function(words){
         alertDelays.push( setTimeout(function(){
         rameses.dalert(words);
-        }, 300));
+        }, 1000));
     }
 }
 
