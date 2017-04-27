@@ -97,7 +97,7 @@ var rameses = {
             setTimeout(function() {
             $("#speech_wrap").fadeOut();
                 }, 1000);
-        }, 400));
+        }, 1000));
     }
 }
 
