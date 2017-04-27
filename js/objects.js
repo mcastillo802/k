@@ -89,17 +89,19 @@ var rameses = {
             rameses.move(0, amount);
         },delay + 200));
     },
-    dalert: function(speak) {
-        $("#bubble").text(speak);
-        $("#speech_wrap").fadeIn();
-        setTimeout(function() {
-            $("#speech_wrap").fadeOut();
-        }, 600);
-    },
     alert: function(words){
-        alertDelays.push( setTimeout(function(){
-        rameses.dalert(words);
-        }, 1000));
+       var delay = rameses.distanceLeft * 250;
+        rameses.distanceLeft += 16;
+        movementDelays.push(setTimeout(function() {
+            //var currentDelay = rameses.distanceLeft;
+            //rameses.distanceLeft = 0;
+            $("#bubble").text(speak);
+            $("#speech_wrap").fadeIn(500);
+            setTimeout(function() {
+                $("#speech_wrap").fadeOut(500);
+                rameses.distanceLeft -= 16;
+            }, 3000);
+        },delay));
     }
 }
 
