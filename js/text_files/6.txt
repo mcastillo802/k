@@ -4,3 +4,13 @@
 As seen in ther previous lesson, functions can be put into methods as arguments. The reason for this is very simple, return values. Return values allow the function to be assigned a value which can then be used as an argument in a method.
 <br>
 <br>
+For example, look at the following lines of code and try to figure out what would happen before testing it.
+<br>
+<pre>
+rameses.moveUp(add(1,1);
+rameses.moveDown(add(add(1,1),add(2,2)));
+rameses.alert("OMG, it's " +add(4,5));
+</pre>
+<br>
+<br>
+If you guessed <code>rameses</code> would move up 2, down 6, and then say it's 9, then you are correct.
