@@ -96,8 +96,8 @@ var rameses = {
             $("#speech_wrap").fadeIn();
             setTimeout(function() {
             $("#speech_wrap").fadeOut();
-                }, 1000);
-        }, 1000));
+                }, 3000);
+        }, 2000));
     }
 }
 
