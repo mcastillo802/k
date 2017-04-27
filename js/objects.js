@@ -101,6 +101,7 @@ var rameses = {
         alertDelays.push(setTimeout function(){
             rameses.alert(a);
         }, 500);
+    }
 }
 }
 
