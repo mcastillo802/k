@@ -6,3 +6,12 @@ The main differences are the ways that they end. For loops end after a specific 
 <br>
 You can check out the differences using these bits of codes:
 <pre>
+for(var i=1;i<6;i++){
+rameses.alert("I have done this "+i+" times");
+}
+
+while(i < 6){
+rameses.alert("This is the "+i+" iteration");
+i++;
+}
+</pre>
