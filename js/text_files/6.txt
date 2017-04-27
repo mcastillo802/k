@@ -6,6 +6,7 @@ As seen in ther previous lesson, functions can be put into methods as arguments.
 <br>
 For example, look at the following lines of code and try to figure out what would happen before testing it.
 <br>
+<br>
 <pre>
 rameses.moveUp(add(1,1);
 rameses.moveDown(add(add(1,1),add(2,2)));
