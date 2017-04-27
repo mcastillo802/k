@@ -97,7 +97,7 @@ var rameses = {
         }, 1000);
     },
     alert: function(words){
-        alertDelay.push( setTimeout(function(){
+        alertDelays.push( setTimeout(function(){
         rameses.dalert(words);
         }, 300));
     }
