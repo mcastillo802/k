@@ -1,12 +1,6 @@
 var movementDelays = [];
 var alertDelays = [];
 
-var dalert = function(a){
-    alertDelays.push(setTimeout function(){
-        rameses.alert(a);
-    }, 500);
-}
-
 var rameses = {
     name: "Rameses",
     thought: "What a GDTBATH...",
