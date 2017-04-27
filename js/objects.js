@@ -91,13 +91,11 @@ var rameses = {
     },
     alert: function(speak) {
         
-        alertDelays.push(setTimeout(function(){
             $("#bubble").text(speak);
             $("#speech_wrap").fadeIn();
             setTimeout(function() {
             $("#speech_wrap").fadeOut();
                 }, 3000);
-        }, 2000));
     }
 }
 
