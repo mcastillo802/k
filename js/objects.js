@@ -89,7 +89,7 @@ var rameses = {
             rameses.move(0, amount);
         },delay + 200));
     },
-    alert: function(words){
+    alert: function(speak){
        var delay = rameses.distanceLeft * 250;
         rameses.distanceLeft += 16;
         movementDelays.push(setTimeout(function() {
