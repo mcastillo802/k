@@ -1,4 +1,5 @@
 var movementDelays = [];
+var alertDelays = [];
 
 var rameses = {
     name: "Rameses",
@@ -89,11 +90,14 @@ var rameses = {
         },delay + 200));
     },
     alert: function(speak) {
-        $("#bubble").text(speak);
-        $("#speech_wrap").fadeIn();
-        setTimeout(function() {
+        
+        alertDelays.push(setTimeout(function(){
+            $("#bubble").text(speak);
+            $("#speech_wrap").fadeIn();
+            setTimeout(function() {
             $("#speech_wrap").fadeOut();
-        }, 3000);
+                }, 600);
+        }, 200));
     }
 }
 
