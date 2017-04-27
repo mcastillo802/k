@@ -4,7 +4,7 @@
 As seen in ther previous lesson, functions can be put into methods as arguments. The reason for this is very simple, return values. Return values allow the function to be assigned a value which can then be used as an argument in a method.
 <br>
 <br>
-For example, look at the following lines of code and try to figure out what would happen before testing it.
+For example, look at the following lines of code and try to figure out what would happen before testing it. Don't forget to put the add function into the "myFunctions.js" tab, if you have not done this already.
 <br>
 <br>
 <pre>
