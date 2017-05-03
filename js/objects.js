@@ -19,9 +19,9 @@ var rameses = {};
     rameses.bY= 33;
     rameses.distanceLeft= 0;
 
-    rameses.pendingCallback= function(){};
+    rameses.pendingCallbackcc= function(){};
 
-    rameses.setCollisionReaction= function(colCallback) {
+    rameses.setCollisionReactioncc= function(colCallback) {
     	ramesesCollisionReaction = colCallback;
     };
 
