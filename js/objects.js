@@ -1,23 +1,23 @@
 var movementDelays = [];
 var alertDelays = [];
 
-var rameses = {
-    name: "Rameses",
-    thought: "What a GDTBATH...",
-    direction: "E",
-    isColliding: false,
-    isAgainstWall: false,
-    isFacingWall: false,
-    collision: true,
-    isMoving: false,
-    onScreen: true,
-    speed: 250,
-    pX: 2600,
-    pY: 1650,
-    bX: 52,
-    bY: 33,
-    distanceLeft: 0,
-    move: function(x,y) {
+var rameses = {};
+    rameses.name = "Rameses";
+    rameses.thought= "What a GDTBATH...";
+    rameses.direction= "E";
+    rameses.isColliding= false;
+    rameses.isAgainstWall= false;
+    rameses.isFacingWall= false;
+    rameses.collision= true;
+    rameses.isMoving= false;
+    rameses.onScreen= true;
+    rameses.speed= 250;
+    rameses.pX= 2600;
+    rameses.pY= 1650;
+    rameses.bX= 52;
+    rameses.bY= 33;
+    rameses.distanceLeft= 0;
+    rameses.move = function(x,y) {
         
         if(isNaN(x) || isNaN(x)) {
             throw new TypeError("move() only accepts legal numbers");
@@ -58,38 +58,38 @@ var rameses = {
             })
         })
         return null;
-    },
-    moveRight: function(amount) {
+    };
+    rameses.moveRight = function(amount) {
         var delay = rameses.distanceLeft * 250;
         rameses.distanceLeft += Math.abs(amount);
         movementDelays.push(setTimeout(function() {
             rameses.move(amount,0);
         },delay + 200));
         
-    },
-    moveLeft: function(amount) {
+    };
+    rameses.moveLeft = function(amount) {
         var delay = rameses.distanceLeft * 250;
         rameses.distanceLeft += Math.abs(amount);
         movementDelays.push(setTimeout(function() {
             rameses.move(-1*amount,0);
         },delay + 200));
-    },
-    moveUp: function(amount) {
+    };
+    rameses.moveUp = function(amount) {
         var delay = rameses.distanceLeft * 250;
         rameses.distanceLeft += Math.abs(amount);
         movementDelays.push(setTimeout(function() {
             rameses.move(0,-1*amount);
         },delay + 200));
-    },
-    moveDown: function(amount) {
+    };
+    rameses.moveDown = function(amount) {
         var delay = rameses.distanceLeft * 250;
         rameses.distanceLeft += Math.abs(amount);
         movementDelays.push(setTimeout(function() {
             $("#rameses_sprite").addClass("running");
             rameses.move(0, amount);
         },delay + 200));
-    },
-    alert: function(speak){
+    };
+    rameses.alert = function(speak){
        var delay = rameses.distanceLeft * 250;
         rameses.distanceLeft += 16;
         movementDelays.push(setTimeout(function() {
@@ -102,8 +102,7 @@ var rameses = {
                 rameses.distanceLeft -= 16;
             }, 3000);
         },delay));
-    }
-}
+    };
 
 // Cursor
 var cursor = {
