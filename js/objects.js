@@ -19,9 +19,9 @@ var rameses = {};
     rameses.bY= 33;
     rameses.distanceLeft= 0;
 
-    rameses.pendingCallback: function(){};
+    rameses.pendingCallbackcc= function(){};
 
-    rameses.setCollisionReaction: function(colCallback) {
+    rameses.setCollisionReactioncc= function(colCallback) {
     	ramesesCollisionReaction = colCallback;
     };
 
@@ -70,7 +70,8 @@ var rameses = {};
         return null;
     };
 
-        rameses.moveWithCB = function(x,y, callback) {
+
+	rameses.moveWithCB = function(x,y, callback) {
         
         if(isNaN(x) || isNaN(x)) {
             throw new TypeError("move() only accepts legal numbers");
