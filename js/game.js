@@ -427,7 +427,7 @@ function update() {
         gallop.volume(0);
     }
     
-    /*
+    
     // Collapses windows
     $(".collapsible").each(function() {
         if( $(this).attr("class").indexOf("collapsed") >= 0 ) {
@@ -436,7 +436,7 @@ function update() {
             $(this).css("height", "initial");
         }
     })
-    */
+   
     
     $(".resizer").each(function() {
         var width = parseInt($(this).css("left"))+15;
