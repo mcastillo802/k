@@ -45,14 +45,19 @@
                     <button id="run"><i class="fa fa-play-circle"></i></button>
                 </div>
                 <div id="editorTabs">
-                    <div id="tab1" class="tab"><i class="fa fa-file"></i> myFunctions.js</div>
-                    <div id="tab2" class="tab activeTab"><i class="fa fa-file"></i> myScript.js</div>
+                    <div id="tab1" class="tab"><i class="fa fa-file"></i> ramesesFunctions.js</div>
+                    <div id="tab2" class="tab activeTab"><i class="fa fa-file"></i> myFunctions.js</div>
+                    <div> id="tab3" class="tab activeTab"><i class="fa fa-file"></i> myScript.js</div>
                 </div>
 <pre id="editor1">
+// These are Rameses' functions
+// You can copy and paste them into the other tabs to use them
+</pre>
+<pre id="editor2">
 // You can define your reusable functions here!
 // Press the orange button to run your code!
 </pre>
-<pre id="editor2">
+<pre id="editor3">
 // Type your code here!
 // Press the orange button to run your code!
 </pre>
@@ -142,6 +147,7 @@
         editor.renderer.setShowInvisibles(false);
         editor.renderer.setShowGutter(true);
         editor.setShowFoldWidgets(false);
+        editor.setReadOnly(true);
         
         var editor2 = ace.edit("editor2");
         editor2.setTheme("ace/theme/tomorrow_night_eighties");
@@ -149,6 +155,13 @@
         editor2.renderer.setShowInvisibles(false);
         editor2.renderer.setShowGutter(true);
         editor2.setShowFoldWidgets(false);
+        
+        var editor = ace.edit("editor3");
+        editor.setTheme("ace/theme/tomorrow_night_eighties");
+        editor.session.setMode("ace/mode/javascript");
+        editor.renderer.setShowInvisibles(false);
+        editor.renderer.setShowGutter(true);
+        editor.setShowFoldWidgets(false);
     </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
     <script src="js/game.js"></script>
