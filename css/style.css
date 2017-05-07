@@ -686,7 +686,7 @@ body {
     display: none;
 }
 
-#editor1, #editor2, #editor3 {
+#editor1, #editor2 {
     height: calc(100% - 80px);
     margin-top: 20px;
     width: 100%;
@@ -695,7 +695,7 @@ body {
     position: absolute;
 }
 
-#editor.visible, #editor2.visible, #editor3.visible {
+#editor.visible, #editor2.visible {
     display: block;
 }
 
